@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+.code-editor {
+  height: 100%;
+  min-height: 400px;
+}
+
+.monaco-editor {
+  height: 100%;
+}
+
+.tag-pill {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.difficulty-easy {
+  @apply bg-green-100 text-green-700;
+}
+
+.difficulty-medium {
+  @apply bg-yellow-100 text-yellow-700;
+}
+
+.difficulty-hard {
+  @apply bg-red-100 text-red-700;
+}
+
+.status-accepted {
+  @apply text-green-600 bg-green-100;
+}
+
+.status-wrong_answer {
+  @apply text-red-600 bg-red-100;
+}
+
+.status-pending {
+  @apply text-yellow-600 bg-yellow-100;
+}
+
+.status-runtime_error {
+  @apply text-orange-600 bg-orange-100;
+}
+
+.status-time_limit {
+  @apply text-purple-600 bg-purple-100;
+}
